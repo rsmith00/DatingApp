@@ -21,7 +21,7 @@ export class RegisterComponent implements OnInit {
   // tslint:disable-next-line: typedef
   register() {
     this.authService.register(this.model).subscribe(() => {
-      console.log('registraction successful')
+      console.log('registraction successful');
     }, error => {
       console.log(error);
     });
